@@ -5,31 +5,33 @@
 #include <iostream>
 #include "Point.h"
 
+// Point Constructor that auto-sets the fill character
 Point::Point(int x, int y) {
-    point.push_back(x);
-    point.push_back(y);
-    this->display = '-';
+    this->x = x;
+    this->y = y;
+    this->fill = '-';
 }
 
-Point::Point(int x, int y, char c) {
-    point.push_back(x);
-    point.push_back(y);
-    display = c;
+// Point Constructor that sets the fill character from the argument
+Point::Point(int x, int y, char fill) {
+    this->x = x;
+    this->y = y;
+    this->fill = fill;
 }
 
 int Point::get_x() {
-    return point.at(0);
+    return this->x;
 }
 
 int Point::get_y() {
-    return point.at(1);
+    return this->y;
 }
 
 void Point::draw() {
-    std::cout << " " << display << " ";
+    std::cout << " " << fill << " ";
 }
 
 void Point::change_char(char c) {
-    this->display = c;
+    this->fill = c;
 }
 

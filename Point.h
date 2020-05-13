@@ -9,12 +9,12 @@
 
 class Point {
 private:
-    std::vector<int> point;
-
+    int x;
+    int y;
+    char fill;
 public:
-    char display;
     Point(int x, int y);
-    Point(int x, int y, char c);
+    Point(int x, int y, char fill);
     int get_x();
     int get_y();
     void draw();

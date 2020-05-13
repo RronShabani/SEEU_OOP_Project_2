@@ -8,13 +8,14 @@
 #include <string>
 #include <cmath>
 #include "Function.h"
+using namespace std;
 
+// Enum that helps define the function based on its type
 enum e {
     constant,
     linear,
     quadratic
 };
-using namespace std;
 
 class PolynomialFunction: public Function{
 private:

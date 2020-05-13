@@ -17,7 +17,7 @@ public:
     virtual int f() = 0;
     virtual void update_points();
     Point get_point(int x);
-    int get_range();
+    int get_domain();
 };
 
 

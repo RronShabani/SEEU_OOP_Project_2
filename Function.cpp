@@ -9,7 +9,7 @@ Point Function::get_point(int x) {
         return function_points.at(x);
 }
 
-int Function::get_range() {
+int Function::get_domain() {
     return _domain;
 }
 
